@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zeluz Marcas e Patentes: assessoria em registro e proteção de marcas junto ao INPI. Mais de 10 anos de experiência.">
+  <meta name="theme-color" content="#101d35">
+  <title>Zeluz Marcas e Patentes | Proteja sua marca</title>
+  <style>
+    :root{--navy:#5f6b55;--navy2:#4f5b48;--gold:#e9eadf;--cream:#f2f3ed;--ink:#263024;--muted:#687263;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(95,107,85,.97);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em}.mark{width:42px;height:42px;border:0;border-radius:6px;display:block;object-fit:cover;width:54px;height:42px}.brand small{display:block;font-size:10px;letter-spacing:.22em;font-weight:500;color:#d9dce3;margin-top:-3px}
+    nav{display:flex;gap:25px;align-items:center;font-size:14px;color:#e5e9f0}nav a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:7px;padding:12px 19px;font-weight:700;font-size:14px;transition:.2s}.nav-cta,.btn-gold{background:var(--gold);color:#3e4938}.nav-cta:hover,.btn-gold:hover{background:#f5f6ee;transform:translateY(-1px)}
+    .hero{background:linear-gradient(115deg,rgba(79,91,72,.98),rgba(95,107,85,.94)),radial-gradient(circle at 80% 20%,#87917c,transparent 45%);color:white;padding:100px 0 94px;overflow:hidden;position:relative}.hero:after{content:"Z";position:absolute;right:7%;top:-110px;font-family:Georgia,serif;font-size:520px;line-height:1;color:rgba(233,234,223,.08);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center;position:relative;z-index:1}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.19em;font-size:12px;font-weight:800}.hero h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(42px,5.5vw,66px);line-height:1.08;margin:18px 0 22px;max-width:720px}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{font-size:18px;color:#d6dce6;max-width:610px;margin:0 0 30px}.actions{display:flex;gap:13px;flex-wrap:wrap}.btn-outline{border:1px solid rgba(255,255,255,.45);color:#fff}.btn-outline:hover{background:rgba(255,255,255,.1)}.trust{border-left:1px solid rgba(199,161,91,.7);padding:24px 0 24px 28px}.trust strong{display:block;font-family:Georgia,serif;color:var(--gold);font-size:58px;line-height:1}.trust span{display:block;color:#e1e6ee;font-size:15px;margin-top:10px;max-width:190px}
+    .strip{background:var(--cream);padding:19px 0}.strip-inner{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;color:#4d5665;font-size:13px;font-weight:700}.strip b{color:var(--gold);margin-right:7px}
+    section{padding:82px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.section-head .eyebrow{color:#65745b}.section-head h2{font-family:Georgia,serif;font-size:clamp(32px,4vw,43px);font-weight:500;color:var(--navy);line-height:1.15;margin:12px 0}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border:1px solid #e7e9ee;border-radius:12px;padding:27px;background:#fff;box-shadow:0 8px 24px rgba(16,29,53,.035)}.service .num{color:var(--gold);font-family:Georgia,serif;font-size:26px}.service h3{color:var(--navy);margin:10px 0 8px;font-size:18px}.service p{color:var(--muted);font-size:14px;margin:0}
+    .about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.about-card{background:var(--navy);color:white;padding:42px;border-radius:14px;min-height:290px;display:flex;flex-direction:column;justify-content:space-between}.about-card .big{font-family:Georgia,serif;font-size:62px;color:var(--gold);line-height:1}.about-card p{font-size:18px;margin:14px 0 0;color:#e1e6ee}.about-copy h2{font-family:Georgia,serif;font-size:42px;font-weight:500;color:var(--navy);line-height:1.15;margin:10px 0 18px}.about-copy p{color:var(--muted)}.about-copy ul{padding:0;list-style:none;margin:24px 0}.about-copy li{margin:10px 0;color:#354052}.about-copy li:before{content:"✓";color:#65745b;font-weight:900;margin-right:10px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step{text-align:center;padding:12px}.step-icon{width:52px;height:52px;border-radius:50%;background:#e5e9df;color:#65745b;display:grid;place-items:center;margin:0 auto 16px;font-weight:800}.step h3{color:var(--navy);font-size:17px;margin:0 0 7px}.step p{color:var(--muted);font-size:14px;margin:0}
+    .contact{background:var(--navy);color:#fff;text-align:center;padding:76px 0}.contact h2{font-family:Georgia,serif;font-size:clamp(34px,4vw,46px);font-weight:500;margin:10px 0}.contact p{color:#d5dce7;max-width:620px;margin:0 auto 26px}.contact .btn{font-size:15px;padding:14px 23px}.contact-note{font-size:12px!important;color:#aeb8c8!important;margin-top:17px!important}
+    footer{background:#46513f;color:#aeb8c8;padding:26px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:white;font-weight:800;letter-spacing:.08em}
+    @media(max-width:760px){nav{display:none}.hero{padding:72px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:35px}.trust{padding:18px 0 18px 22px}.services{grid-template-columns:1fr}.steps{grid-template-columns:1fr;gap:28px}.about-card{min-height:230px}.about-copy h2{font-size:35px}section{padding:65px 0}.strip-inner{gap:12px 24px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Zeluz Marcas e Patentes">
+      <img class="mark" src="logo-zeluz.jpg" alt="Logo Zeluz Marcas e Patentes"><span>ZELUZ<small>MARCAS E PATENTES</small></span>
+    </a>
+    <nav><a href="#servicos">Serviços</a><a href="#sobre">Sobre a Zeluz</a><a href="#processo">Como funciona</a><a href="https://www.instagram.com/adianapimentel/" target="_blank" rel="noopener">Instagram</a><a href="#contato" class="nav-cta">Fale conosco</a></nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Assessoria em marcas e patentes</div>
+        <h1>Proteja sua marca.<br><em>Valorize seu negócio.</em></h1>
+        <p>Orientação especializada para quem deseja registrar e proteger sua marca junto ao INPI, com acompanhamento em cada etapa do processo.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://wa.me/5551999190013?text=Olá!%20Gostaria%20de%20informações%20sobre%20registro%20de%20marca." target="_blank" rel="noopener">Falar pelo WhatsApp ↗</a>
+          <a class="btn btn-outline" href="#servicos">Conheça nossos serviços</a>
+        </div>
+      </div>
+      <div class="trust"><strong>10+</strong><span>anos de experiência em assessoria de marcas e patentes</span></div>
+    </div>
+  </section>
+  <div class="strip"><div class="wrap strip-inner"><span><b>✓</b> Atendimento próximo</span><span><b>✓</b> Acompanhamento processual</span><span><b>✓</b> Orientação especializada</span></div></div>
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Como podemos ajudar</div><h2>Serviços para proteger o que identifica sua empresa</h2><p>Conte com apoio para compreender as etapas e os procedimentos relacionados à proteção da sua marca.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><h3>Registro de marcas</h3><p>Assessoria na preparação e no acompanhamento do pedido de registro de marca junto ao INPI.</p></article>
+        <article class="service"><div class="num">02</div><h3>Análise de viabilidade</h3><p>Pesquisa e avaliação preliminar para orientar os próximos passos antes do pedido de registro.</p></article>
+        <article class="service"><div class="num">03</div><h3>Acompanhamento de processos</h3><p>Monitoramento de publicações e orientação sobre movimentações e prazos do processo.</p></article>
+        <article class="service"><div class="num">04</div><h3>Exigências e manifestações</h3><p>Orientação e suporte na preparação de respostas a exigências e manifestações administrativas.</p></article>
+        <article class="service"><div class="num">05</div><h3>Oposições</h3><p>Apoio na análise de oposições apresentadas em processos de registro de marcas e nos encaminhamentos cabíveis.</p></article>
+        <article class="service"><div class="num">06</div><h3>Recursos administrativos</h3><p>Orientação sobre possibilidades de recurso e acompanhamento das etapas administrativas aplicáveis.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div class="about-card"><div class="eyebrow">Experiência que orienta</div><div><div class="big">10+ anos</div><p>de experiência em assessoria de marcas e patentes</p></div></div>
+      <div class="about-copy"><div class="eyebrow">Sobre a Zeluz</div><h2>Seu negócio tem uma identidade. Ela merece cuidado.</h2><p>A Zeluz Marcas e Patentes auxilia empreendedores, profissionais e empresas nos procedimentos relacionados ao registro e à proteção de marcas junto ao INPI.</p><p>Nosso trabalho é oferecer informação clara, atendimento próximo e acompanhamento responsável para que você tenha mais segurança ao tomar decisões sobre sua marca.</p><ul><li>Explicações claras sobre cada etapa</li><li>Acompanhamento dos andamentos do processo</li><li>Atendimento por WhatsApp</li></ul></div>
+    </div>
+  </section>
+  <section id="processo">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Comece com orientação</div><h2>Como funciona o atendimento</h2><p>Um caminho simples para entender as necessidades da sua marca.</p></div>
+      <div class="steps">
+        <div class="step"><div class="step-icon">1</div><h3>Conte sua necessidade</h3><p>Fale com a Zeluz e explique sua dúvida ou objetivo.</p></div>
+        <div class="step"><div class="step-icon">2</div><h3>Receba orientação</h3><p>Entenda as possibilidades, etapas e informações necessárias para o seu caso.</p></div>
+        <div class="step"><div class="step-icon">3</div><h3>Acompanhe os próximos passos</h3><p>Conte com suporte e acompanhamento conforme o serviço contratado.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contato">
+    <div class="wrap">
+      <div class="eyebrow">Vamos conversar?</div><h2>O próximo passo para proteger sua marca começa aqui.</h2>
+      <p>Entre em contato com a Zeluz Marcas e Patentes para tirar dúvidas e conhecer as possibilidades para o seu negócio.</p>
+      <a class="btn btn-gold" href="https://wa.me/5551999190013?text=Olá!%20Gostaria%20de%20conversar%20com%20a%20Zeluz%20sobre%20proteção%20de%20marca." target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a>
+      <p class="contact-note">WhatsApp: (51) 99919-0013 · Instagram: <a href="https://www.instagram.com/adianapimentel/" target="_blank" rel="noopener">@adianapimentel</a></p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><span class="footer-brand">ZELUZ MARCAS E PATENTES</span><span>© <span id="year">2026</span> Zeluz. Todos os direitos reservados.</span><span><a href="https://www.instagram.com/adianapimentel/" target="_blank" rel="noopener">Instagram @adianapimentel</a> · O INPI é uma instituição pública independente. A Zeluz não é órgão governamental.</span></div></footer>
+</body>
+</html>
